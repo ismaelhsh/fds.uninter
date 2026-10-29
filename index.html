@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Studio SCafé| Sobrancelhas e Cílios</title>
+
+  <meta
+    name="description"
+    content="Conheça nossos serviços de sobrancelhas e cílios e solicite seu agendamento."
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <a class="logo" href="#inicio">Studio SCafé</a>
+
+    <nav aria-label="Menu principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#agendamento">Agendar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="apresentacao">
+      <p class="destaque">SOBRANCELHAS E CÍLIOS</p>
+
+      <h1>Um cuidado especial para valorizar seu olhar.</h1>
+
+      <p>
+        Conheça nossos procedimentos e solicite seu horário
+        de forma simples pelo WhatsApp.
+      </p>
+
+      <a class="botao" href="#agendamento">
+        Quero agendar
+      </a>
+    </section>
+
+    <section id="servicos" class="secao">
+      <h2>Nossos serviços</h2>
+
+      <p>Escolha o cuidado que combina com você.</p>
+
+      <div class="lista-servicos">
+        <article class="cartao">
+          <h3>Design de sobrancelhas</h3>
+
+          <p>
+            Modelagem das sobrancelhas respeitando
+            suas características.
+          </p>
+
+          <p class="preco">R$ 35,00</p>
+        </article>
+
+        <article class="cartao">
+          <h3>Design com henna</h3>
+
+          <p>
+            Definição e preenchimento para destacar
+            suas sobrancelhas.
+          </p>
+
+          <p class="preco">R$ 50,00</p>
+        </article>
+
+        <article class="cartao">
+          <h3>Extensão de cílios</h3>
+
+          <p>
+            Um olhar marcante com aplicação
+            personalizada de cílios.
+          </p>
+
+          <p class="preco">R$ 120,00</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre" class="secao sobre">
+      <h2>Sobre o Studio</h2>
+
+      <p>
+        Nosso espaço foi pensado para oferecer um atendimento
+        acolhedor, com atenção aos detalhes e à sua beleza.
+      </p>
+
+      <p>
+        Atendimento de segunda a sábado, das 9h às 18h,
+        mediante confirmação.
+      </p>
+    </section>
+
+    <section id="agendamento" class="secao">
+      <h2>Solicite seu agendamento</h2>
+
+      <p>
+        Preencha os dados. Você será direcionado ao WhatsApp
+        para confirmar a disponibilidade.
+      </p>
+
+      <form id="formulario-agendamento" class="formulario">
+        <label for="nome">Seu nome</label>
+
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite seu nome"
+          autocomplete="name"
+          maxlength="80"
+          required
+        >
+
+        <label for="servico">Serviço</label>
+
+        <select id="servico" name="servico" required>
+          <option value="">Selecione um serviço</option>
+
+          <option value="Design de sobrancelhas">
+            Design de sobrancelhas
+          </option>
+
+          <option value="Design com henna">
+            Design com henna
+          </option>
+
+          <option value="Extensão de cílios">
+            Extensão de cílios
+          </option>
+        </select>
+
+        <label for="data">Data desejada</label>
+
+        <input
+          type="date"
+          id="data"
+          name="data"
+          required
+        >
+
+        <label for="horario">Horário desejado</label>
+
+        <select id="horario" name="horario" required>
+          <option value="">Selecione um horário</option>
+          <option value="09:00">09:00</option>
+          <option value="10:00">10:00</option>
+          <option value="11:00">11:00</option>
+          <option value="14:00">14:00</option>
+          <option value="15:00">15:00</option>
+          <option value="16:00">16:00</option>
+          <option value="17:00">17:00</option>
+        </select>
+
+        <button type="submit" class="botao">
+          Solicitar pelo WhatsApp
+        </button>
+
+        <p class="aviso">
+          O horário só estará reservado após nossa confirmação.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Studio Scafé — Sobrancelhas e Cílios</p>
+  </footer>
+</body>
+</html>

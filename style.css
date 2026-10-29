@@ -1,0 +1,225 @@
+/* Faz o tamanho incluir as bordas e os espaços internos. */
+* {
+  box-sizing: border-box;
+}
+
+/* Suaviza a navegação entre as seções. */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Aparência geral da página. */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fffaf7;
+  color: #36252d;
+  line-height: 1.6;
+}
+
+/* Faz links usarem a cor do elemento em que estão. */
+a {
+  color: inherit;
+}
+
+/* Cabeçalho e menu. */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  padding: 20px 6%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eadce1;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #913c60;
+}
+
+.cabecalho nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cabecalho nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cabecalho nav a:hover {
+  color: #913c60;
+}
+
+/* Primeira seção. */
+.apresentacao {
+  padding: 90px 24px;
+  text-align: center;
+  background: linear-gradient(135deg, #fce8ed, #fff3df);
+}
+
+.destaque {
+  color: #913c60;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+h1 {
+  max-width: 760px;
+  margin: 16px auto;
+  font-size: 48px;
+  line-height: 1.15;
+}
+
+.apresentacao > p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo compartilhado pelo link e pelo botão do formulário. */
+.botao {
+  display: inline-block;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 10px;
+
+  background-color: #913c60;
+  color: #ffffff;
+
+  font: inherit;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
+.botao:hover {
+  background-color: #702a48;
+}
+
+/* Indica onde está o foco ao navegar pelo teclado. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #913c60;
+  outline-offset: 4px;
+}
+
+/* Estrutura compartilhada entre as seções. */
+.secao {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+/* Coloca os três serviços lado a lado. */
+.lista-servicos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.cartao {
+  padding: 28px;
+  border: 1px solid #eadce1;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 20px #36252d0a;
+}
+
+.cartao h3 {
+  margin-top: 0;
+}
+
+.preco {
+  color: #913c60;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sobre {
+  background-color: #f7ecef;
+  border-radius: 20px;
+}
+
+/* Organiza os campos do formulário um abaixo do outro. */
+.formulario {
+  display: grid;
+  gap: 12px;
+  max-width: 560px;
+  margin-top: 28px;
+}
+
+.formulario label {
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario select {
+  width: 100%;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #bda8b0;
+  border-radius: 8px;
+
+  background-color: #ffffff;
+  color: #36252d;
+  font: inherit;
+}
+
+.formulario .botao {
+  margin-top: 12px;
+}
+
+.aviso {
+  margin: 0;
+  font-size: 14px;
+  color: #65515a;
+}
+
+.rodape {
+  padding: 24px;
+  text-align: center;
+  background-color: #36252d;
+  color: #ffffff;
+}
+
+/* Ajustes para telas de até 700 pixels de largura. */
+@media (max-width: 700px) {
+  .cabecalho {
+    flex-direction: column;
+  }
+
+  .cabecalho nav {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .apresentacao {
+    padding: 60px 24px;
+  }
+
+  .lista-servicos {
+    grid-template-columns: 1fr;
+  }
+}
